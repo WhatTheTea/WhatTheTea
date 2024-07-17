@@ -4,11 +4,15 @@
 - WPF
 - WinUI, UWP
 - ASP.NET Core
+- Unity
 
-### Favorite topics 📃
+### Interested in 📃
 - Clean code and architecture
-- Unit testing
-- CI/CD
+- Best practices
+- Test driven design
+- Domain driven design
+- Dependency injection
+- Continuous integration and deployment
 
 ## Projects ✅
 - [sprotyv-map](https://github.com/WhatTheTea/sprotyvmap)
