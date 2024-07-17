@@ -1,19 +1,17 @@
 # WhatTheTea🍵 - .NET Developer from 🇺🇦 Ukraine
 
+### Programming languages #️⃣
+- C#
+- C++
+- Python
+- JavaScript / TypeScript
+
 ### I have experience with 🎯
 - WPF
 - WinUI, UWP
 - ASP.NET Core
 - Unity
-
-### Interested in 📃
-- Clean code and architecture
-- Best practices
-- Test driven design
-- Domain driven design
-- Dependency injection
-- Continuous integration and deployment
-
+- 
 ## Projects ✅
 - [sprotyv-map](https://github.com/WhatTheTea/sprotyvmap)
 - [Visicom Data API geocoder wrapper](https://github.com/WhatTheTea/Visicom.DataApi.Geocoder)
