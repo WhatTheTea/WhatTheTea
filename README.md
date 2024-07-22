@@ -7,10 +7,10 @@
 - JavaScript / TypeScript
 
 ### I have experience with 🎯
-- WPF
-- WinUI, UWP
-- ASP.NET Core
-- Unity
+- Desktop: WPF, WinUI, UWP
+- Web: Blazor, ASP.NET Core
+- GameDev: Unity
+- Data: SQLite, NoSQL, EF Core
   
 ## Projects ✅
 - [sprotyv-map](https://github.com/WhatTheTea/sprotyvmap)
