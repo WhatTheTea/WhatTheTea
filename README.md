@@ -1,5 +1,5 @@
 # WhatTheTea🍵 - .NET Developer from 🇺🇦 Ukraine
-- Desktop: WPF, WinUI, UWP<br/>
-*Rx.NET, ReactiveUI, CommunityToolkit, Extensions.DependencyInjection. . .*
-- Web: Blazor, ASP.NET Core
-- Data: SQLite, NoSQL, EF Core, Dapper
+Alex, .NET developer since 2018. I have experience with desktop and web development.
+For my achievements in software design I was awarded by JASU and VNTU (in my late school and early college period).
+In college I have seeked for a part-time job, which leaded me to experience in mentoring and teaching the basics of C#, C++, Python and Unity.
+Developing robust and powerful software @ DCT
