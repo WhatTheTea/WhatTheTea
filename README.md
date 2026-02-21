@@ -1,5 +1,2 @@
 # WhatTheTea🍵 - .NET Developer from 🇺🇦 Ukraine
-Alex, .NET developer since 2019. I have experience with desktop and web development.
-For my achievements in software design I was awarded by JASU and VNTU (in my late school and early college period).
-In college I have seeked for a part-time job, which leaded me to experience in mentoring and teaching the basics of C#, C++, Python and Unity.
-Developing robust and powerful software @ DCT
+I build .NET solutions since 2019 (comercially since 2024) with strong foundation in computer engineering, software design (with AI) and mentoring.
