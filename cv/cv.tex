@@ -22,10 +22,10 @@
 
 \documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
 \usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
 
 \definecolor{darkred}{rgb}{0.5,0,0}
-
-\usepackage{tcolorbox}
 
 \newtcbox{\pill}[1][red]{on line,
 arc=0pt,colback=#1!20!white,colframe=black,coltext=black,
@@ -40,7 +40,7 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.35\textwidth} % Left column with your name and title, change the width as needed
+\begin{minipage}[t]{0.4\textwidth} % Left column with your name and title, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% If your name is very short: use just one of the lines below
@@ -54,9 +54,8 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	{\huge .NET Developer - 20 y.o.} % Career or current job title
 \end{minipage}
 \hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.6\textwidth} % Center column with the first column of icons
+\begin{minipage}[t]{0.36\textwidth} % Center column with the first column of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome5.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
 	\icon{MapMarker}{12}{Romny, Ukraine}\\
@@ -64,8 +63,14 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	\icon{Globe}{12}{\href{https://whatthetea.github.io}{whatthetea.github.io}}\\
 	\icon{Github}{12}{\href{https://github.com/whatthetea}{github.com/whatthetea}}
 \end{minipage}
+\hfill % Automatic horizontal whitespace
+\begin{minipage}[t]{0.2\textwidth} % Right column 
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\raggedleft
+	\colorbox{black}{\includegraphics[width=3cm]{profile.jpg}}
+\end{minipage}
 
-\vspace{0.5cm} % Vertical whitespace
+
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
@@ -76,16 +81,26 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 \begin{minipage}[t]{\textwidth} % Left column with the introduction text, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	I build .NET solutions since 2019 (comercially since 2024) with strong foundation in computer engineering, software design (with AI) and mentoring.
-	\\\\
-	Expertise:
-	- Desktop \& Web: Building modern containerized services with desktop frontend using ASP.NET (Core), WinUI 3, WPF, UWP ensuring stability via unit and automated UI testing. (xUnit, NSubstitute, Shouldly)
-	- DevOps: Automating workflows via Azure DevOps, GitHub Actions using YAML and PowerShell.
-	- Technical Writing: Writing extensive internal docs from READMEs to pipeline configuration guides.
-	- AI: Developing RAG modules using Python FastAPI, SentenceTransfromers and unstructured.io.
-	\\\\
-	Background:
-	- Proactive youth: Awarded by JASU and VNTU for achievements in software design, awarded by Governor of Sumy Oblast for academic and public achievements.
-	- Mentorship: Teaching experience C\#, C++ and Python to kids helps me write clean documentation for adults
+	\end{minipage}
+\hfill % Automatic horizontal whitespace
+
+\cvsect{Expertise}
+
+\begin{minipage}[t]{\textwidth} % Left column with the introduction text, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\textbf{Desktop \& Web}: Building modern containerized services with desktop frontend using ASP.NET (Core), WinUI 3, WPF, UWP ensuring stability via unit and automated UI testing. (xUnit, NSubstitute, Shouldly)
+	\\\textbf{DevOps}: Automating workflows via Azure DevOps, GitHub Actions using YAML and PowerShell.
+	\\\textbf{Technical Writing}: Writing extensive internal docs from READMEs to pipeline configuration guides.
+	\\\textbf{AI}: Developing RAG modules using Python FastAPI, SentenceTransfromers and unstructured.io.
+\end{minipage}
+\hfill % Automatic horizontal whitespace
+
+\cvsect{Background}
+
+\begin{minipage}[t]{\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\textbf{Proactive youth}: Awarded by JASU and VNTU for achievements in software design, awarded by Governor of Sumy Oblast for academic and public achievements.
+	\\\textbf{Mentorship}: Teaching experience C\#, C++ and Python to kids helps me write clean documentation for adults.
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 
@@ -169,7 +184,7 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	
 	\cvsect{Hobbies}
 	
-	I am fond of retro gaming, cars and tech of the 80s and 90s, which inspires my work in software development. \\
+	I am fond of retro gaming, retro cars and tech of the 80s / 90s, which inspires my work in software development. \\
 	I also enjoy hiking and exploring nature, which helps me stay creative and motivated. 
 \end{minipage}
 \hfill % Automatic horizontal whitespace
