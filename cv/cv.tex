@@ -32,6 +32,8 @@ arc=0pt,colback=#1!20!white,colframe=black,coltext=black,
 before upper={\rule[-3pt]{0pt}{10pt}},boxrule=0.5pt,
 boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 
+\setlength{\leftmargini}{.85em} 
+
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -74,12 +76,14 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 %----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.51\textwidth} % Left column with the introduction text, change the width as needed
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Summary}
 	
-	Building .NET solutions since 2019 (commercially since 2024) with strong foundation in computer engineering, software design and mentoring. I am proactive, yet pragmatic specialist striving to make life better for both myself and others via communication and engineering. 
+	Building .NET solutions since 2019 (commercially since 2024) with strong foundation in computer engineering, software design and mentoring. I am a proactive, yet pragmatic specialist striving for clean communication and engineering practices. 
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.47\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Background}
 
 	\textbf{Proactive youth}: Awarded by JASU and VNTU for achievements in software design, awarded by Governor of Sumy Oblast for academic and public achievements.
@@ -87,17 +91,23 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 
-\cvsect{Expertise}
+\cvsect{Highlights}
 
 \begin{minipage}[t]{\textwidth} % Left column with the introduction text, change the width as needed
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	% \textbf{Desktop \& Web}: Building modern containerized services with desktop frontend using ASP.NET (Core), 
-	% WinUI 3, WPF, UWP ensuring stability via unit and automated UI testing. (xUnit, NSubstitute, Shouldly)
-	% \\\textbf{DevOps}: Automating workflows via Azure DevOps, GitHub Actions using YAML and PowerShell.
-	% \\\textbf{Technical Writing}: Writing extensive internal docs from READMEs to pipeline configuration guides.
-	% \\\textbf{AI}: Developing RAG modules using Python FastAPI, SentenceTransfromers and unstructured.io.
 
+	\textbf{Desktop}: I built commercial desktop application to display Bluetooth devices charge information from ground up using WinUI 3 and Windows App SDK APIs. Application uses MVVM pattern, reactive programming and is covered with unit and UI tests. I implemented low-level device communication and reverse engineered proprietary Bluetooth protocols.
+	
+	\textbf{DevOps \& Infrastructure}: Engineered a centralized, version-controlled Azure DevOps YAML pipeline ecosystem to migrate legacy, project-specific Classic configurations. 
+	\begin{itemize}
+		\item \vspace{-.5em}\textbf{Pipeline Architecture}: Decomposed the system into reusable steps with aggregation into master-templates to eliminate configuration drift and human errors across multiple desktop products. 
+		\item \vspace{-1em}\textbf{Session Troubleshooting}: Resolved complex UI session limitations on Windows agents to enable stable automated desktop UI testing. 
+		\item \vspace{-1em}\textbf{Workflow Integration}: Utilized the Azure DevOps REST API to optimize the developer experience, enforce company workflow gates, and thoroughly documented the architecture in the internal wiki to ensure smooth onboarding.
+	\end{itemize}	
+	\vspace{-.5em}
+	\textbf{Web \& AI}: I architected enterprise RAG microservice using FastAPI, PostgreSQL, SentenceTransformers and unstructured.io to provide embeddings to chatbot from external sources. The service is containerized and has recurrent behavior that can be configured without redeploying the service.  
 
+	\textbf{Legacy Modernization}: Overhauled the architecture of a legacy 6k LoC monolithic UI component in screenshot taking application from 2016. Isolated separate viewer/editor concerns, eliminated complex UI code-behind graphic calculations, and implemented a clean data-driven architecture. Isolated components were shipped incrementally to keep the smooth transition, so application is more stable and maintainable now.
 	
 \end{minipage}
 \hfill % Automatic horizontal whitespace
@@ -164,7 +174,7 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 %	ADDITIONAL INFORMATION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.29\textwidth} % Left column width
+\begin{minipage}[t]{0.27\textwidth} % Left column width
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Languages}
 	
@@ -173,7 +183,7 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	\textbf{Polish} - A1 (beginner)
 \end{minipage}
 \hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.33\textwidth} % Center column width
+\begin{minipage}[t]{0.3\textwidth} % Center column width
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Hobbies} 
 

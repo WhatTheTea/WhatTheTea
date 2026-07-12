@@ -49,15 +49,15 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 
 \geometry{
-	paper=a4paper, % Paper size, change to letterpaper for US letter size
-	top=1.75cm, % Top margin
-	bottom=1.75cm, % Bottom margin
-	left=2cm, % Left margin
-	right=2cm, % Right margin
-	headheight=0.75cm, % Header height
-	footskip=1cm, % Space from the bottom margin to the baseline of the footer
-	headsep=0.5cm, % Space from the top margin to the baseline of the header
-	%showframe, % Uncomment to show how the type block is set on the page
+    paper=a4paper,
+    top=1.2cm,       % Increased vertical room by bringing text higher
+    bottom=1.2cm,    % Increased vertical room at the bottom
+    left=1.6cm,      % Margins slightly narrower to let code/text lines breathe horizontally
+    right=1.6cm,
+    headheight=0cm,  % Set to 0 if you don't use running page headers
+    headsep=0cm,     % Eliminates dead space at the top of the page
+    footskip=0.6cm,  % Pushes the footer lower to free up content space
+    %showframe,
 }
 
 %----------------------------------------------------------------------------------------
