@@ -3,7 +3,7 @@ Building .NET solutions since 2019 (commercially since 2024) with strong foundat
 
 ## Languages:
 ```wts-languages
-C#        : [████████████░-------] 57.9%
+C#        : [████████████░-------] 57.7%
 Python    : [██░-----------------] 11.0%
 ShaderLab : [██░-----------------] 9.6%
 C++       : [█░------------------] 5.5%
