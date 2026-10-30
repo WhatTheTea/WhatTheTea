@@ -185,7 +185,7 @@
 	\end{longtable}
 }
 
-\newcommand{\entry}[5]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
+\newcommand{\entry}[6]{% First argument for the leftmost date(s) text, second is for the bold entry heading, third is for the bold right-aligned entry qualifier and the fourth is for the entry description
 	\parbox[t]{0.175\textwidth}{% 17.5% of the text width of the page
 		#1 % Leftmost entry date(s) text
 	}%
@@ -196,7 +196,16 @@
 		#4 % Entry description text
 		\hfill 
 		#5 % right-aligned secondary qualifier text
-	}\\\\}
-
+	}%
+	\notblank{#6}{%
+        \\% End the top row
+        \multicolumn{2}{@{}l@{}}{%
+            \begin{minipage}[t]{\textwidth}
+                #6
+            \end{minipage}%
+        }%
+    }{}%
+	\\\\
+}
 % Command to output a separator slash between lists, e.g. '  /  '
 \newcommand{\slashsep}{\hspace{3mm}/\hspace{3mm}}

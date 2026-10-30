@@ -24,13 +24,8 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx}
 \usepackage{tcolorbox}
-
-\definecolor{darkred}{rgb}{0.5,0,0}
-
-\newtcbox{\pill}[1][red]{on line,
-arc=0pt,colback=#1!20!white,colframe=black,coltext=black,
-before upper={\rule[-3pt]{0pt}{10pt}},boxrule=0.5pt,
-boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep,topsep=2pt,parsep=3pt}
 
 \setlength{\leftmargini}{.85em} 
 
@@ -53,7 +48,7 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	
 	\vspace{6pt} % Vertical whitespace
 	
-	{\huge .NET Software Engineer - 21 y.o.} % Career or current job title
+	{\huge .NET Software Developer} % Career or current job title
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.36\textwidth} % Center column with the first column of icons
@@ -63,7 +58,8 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	\icon{MapMarker}{12}{Kaunas, Lithuania}\\
 	\icon{At}{12}{\href{mailto:silchenko.whatthetea@gmail.com}{silchenko.whatthetea@gmail.com}}\\	
 	\icon{Linkedin}{12}{\href{https://www.linkedin.com/in/whatthetea/}{in/whatthetea}}\\
-	\icon{Github}{12}{\href{https://github.com/whatthetea}{github.com/whatthetea}}
+	\icon{Github}{12}{\href{https://github.com/whatthetea}{github.com/whatthetea}}\\
+	\icon{Globe}{12}{\href{https://whatthetea.neocities.org/}{Personal Website (WhatTheJunkyard)}}
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.2\textwidth} % Right column 
@@ -75,80 +71,83 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}[t]{0.51\textwidth} % Left column with the introduction text, change the width as needed
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
+\begin{minipage}[t]{\textwidth} % Left column with the introduction text, change the width as needed
+	\vspace{-\baselineskip} 
 	\cvsect{Summary}
 	
-	Building .NET solutions since 2019 (commercially since 2024) with strong foundation in computer engineering, software design and mentoring. I am a proactive, yet pragmatic specialist striving for clean communication and engineering practices. 
-\end{minipage}
-\hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.47\textwidth}
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\cvsect{Background}
-
-	\textbf{Proactive youth}: Awarded by JASU and VNTU for achievements in software design, awarded by Governor of Sumy Oblast for academic and public achievements.
-	\\\textbf{Mentorship}: Teaching experience C\#, C++ and Python to kids help me write clean documentation for adults.
-\end{minipage}
-\hfill % Automatic horizontal whitespace
-
-\cvsect{Experience}
-
-\begin{minipage}[t]{\textwidth} % Left column with the introduction text, change the width as needed
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-
-	\textbf{Desktop}: I built commercial desktop application to display Bluetooth devices charge information from ground up using WinUI 3 and Windows App SDK APIs. Application uses MVVM pattern, reactive programming and is covered with unit and UI tests. I implemented low-level device communication and reverse engineered proprietary Bluetooth protocols.
-	
-	\textbf{DevOps \& Infrastructure}: Engineered a centralized, version-controlled Azure DevOps YAML pipeline ecosystem to migrate legacy, project-specific Classic configurations. 
-	\begin{itemize}
-		\item \vspace{-.5em}\textbf{Pipeline Architecture}: Decomposed the system into reusable steps with aggregation into master-templates to eliminate configuration drift and human errors across multiple desktop products. 
-		\item \vspace{-1em}\textbf{Session Troubleshooting}: Resolved complex UI session limitations on Windows agents to enable stable automated desktop UI testing. 
-		\item \vspace{-1em}\textbf{Workflow Integration}: Utilized the Azure DevOps REST API to optimize the developer experience, enforce company workflow gates, and thoroughly documented the architecture in the internal wiki to ensure smooth onboarding.
-	\end{itemize}	
-	\vspace{-.5em}
-	\textbf{Web \& AI}: I architected enterprise RAG microservice using FastAPI, PostgreSQL, SentenceTransformers and unstructured.io to provide embeddings to chatbot from external sources. The service is containerized and has recurrent behavior that can be configured without redeploying the service.  
-
-	\textbf{Legacy Modernization}: Overhauled the architecture of a legacy 6k LoC monolithic UI component in screenshot taking application from 2016. Isolated separate viewer/editor concerns, eliminated complex UI code-behind graphic calculations, and implemented a clean data-driven architecture. Isolated components were shipped incrementally to keep the smooth transition, so application is more stable and maintainable now.
-	
-\end{minipage}
+	Software developer with over 6 years of programming experience, including more than 2.5 years of commercial .NET development. 
+	Experienced in Windows desktop applications, Azure DevOps automation, backend services, and legacy system modernization. 
+	I enjoy taking ownership of complex engineering challenges, improving development workflows, and sharing knowledge with others.
+	\end{minipage}
 \hfill % Automatic horizontal whitespace
 
 %----------------------------------------------------------------------------------------
-%	CAREER
+%	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \newcommand{\location}[1]{
 	\small\textit{#1}
 }
 
-\cvsect{Career}
+\cvsect{Experience}
 
 \begin{entrylist}
 	\entry
-		{08.2024 -- now}
-		{Junior C\# Developer}
+		{08.2024 -- present}
+		{C\# Developer}
 		{Digital Cloud Technologies}
-		{\texttt{ASP.NET Core}\slashsep\texttt{Azure DevOps}\slashsep\texttt{MSBuild}\
+		{\texttt{ASP.NET Core}\slashsep\texttt{Azure DevOps}\slashsep\texttt{MSBuild}
 		\slashsep\texttt{Docker}\slashsep\\\texttt{Python}
 		\slashsep\texttt{AI}\slashsep\texttt{PowerShell}\slashsep\texttt{WPF}\slashsep\texttt{UWP}\slashsep\texttt{WinUI}}
-		{\location{Remote, Ukraine}}
+		{\location{Remote}}
+		{
+			{\bf{Desktop}}
+
+			\begin{itemize}
+				\item Built a commercial WinUI 3 application from scratch to display battery levels of connected Bluetooth peripherals, implementing low-level device communication through protocol research, Wireshark packet analysis, and experimentation. Applied MVVM with ReactiveUI and added unit and UI tests.
+				\item 6,000-line single-file screenshot editor split into a viewer and an annotation editor built on reusable tools and command history; delivered in increments so users got a more stable editor early
+				\item Legacy desktop apps migrated to modern .NET versions and SDK-style projects
+				\item Expanded unit and UI tests, native stowed exceptions diagnosed from crash reports on a Bluetooth audio companion app
+			\end{itemize}
+
+			{\bf{DevOps \& Developer Experience}}
+			\begin{itemize}
+				\item Shared, centrally maintained YAML pipeline templates replacing Classic pipelines; migrated 6 projects, enabled parallel product builds, and standardized pipelines for new projects
+				\item Reduced post-build cleanup from up to 15 minutes to < 10 seconds; scheduled agent cleanup prevents disk-full failures
+				\item Configured Windows build agents and integrated UI smoke tests to catch application startup failures before QA
+				\item Implemented PR validation, outdated-dependency reporting, build-to-PR links, and QA/release workflows. Documented the setup and processes to support adoption across the team
+			\end{itemize}
+			
+			{\bf{Web \& AI:}}
+			Python FastAPI microservice for a RAG chatbot over a legal-document database: Unstructured.io, SentenceTransformers, PostgreSQL, scheduled tasks and tracked documents configurable at runtime; part of the production system
+		}
 	\entry
 		{03.2024 -- 08.2024}
 		{Trainee C\# Developer}
 		{Digital Cloud Technologies}
 		{\texttt{C\#}\slashsep\texttt{WPF}\slashsep\texttt{UWP}\slashsep\texttt{MVVM}}
-		{\location{Remote, Ukraine}}
+		{\location{Remote}}
+		{
+			\break\begin{itemize}
+				\item Cryptocurrency tracker prototype built as a technical assessment: CoinCap and CoinGecko integration.
+				\item First prototype of the Bluetooth device charge display app, later developed into the commercial WinUI 3 application
+				\item Hands-on work with WPF, UWP, and .NET Framework on smaller development tasks
+			\end{itemize}
+		}
 	\entry
 		{04.2023 -- 06.2024\\\footnotesize{part time}}
 		{Teacher}
 		{Professions of the Future Academy}
-		{\texttt{C\#}\slashsep\texttt{Unity}\slashsep\texttt{Python}\slashsep\texttt{lua}}
+		{\texttt{C\#}\slashsep\texttt{Unity}\slashsep\texttt{Python}\slashsep\texttt{Lua}}
 		{\location{Romny, Sumy region, Ukraine}}
+		{}
 	\entry
 		{09.2023 -- 05.2024\\\footnotesize{part time}}
 		{Mentor (Section Leader)}
 		{Junior Academy of Sciences of Ukraine}
 		{\texttt{C\#}\slashsep\texttt{C++}}
 		{\location{Romny, Sumy region, Ukraine}}
+		{}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -159,15 +158,15 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 
 \begin{entrylist}
 	\entry
-		{2024 -- 2027 \\ \footnotesize remote}
+		{2024 -- June 2027 \\ \footnotesize remote}
 		{Bachelor's Degree}
 		{Cherkasy State Technological University}
-		{Computer Science}{}
+		{Computer Science}{}{}
 	\entry
 		{2020 -- 2024}
 		{Junior Bachelor's Degree}
 		{Romny Professional College of Vadym Hetman Kyiv National Economic University}
-		{Computer Engineering}{}
+		{Computer Engineering}{}{}
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
@@ -182,25 +181,26 @@ boxsep=0pt,left=6pt,right=6pt,top=2pt,bottom=2pt, after={\,}}
 	\textbf{English} - B2 (upper-intermediate)\\
 \end{minipage}
 \hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.3\textwidth} % Center column width
+\begin{minipage}[t]{0.30\textwidth} % Center column width
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Interests} 
 
-	I am interested in vintage technology, which expressed through our Volkswagen Jetta Mk2 '87 restoration project with my wife.
-	Learning about retro gaming and computing history inspired me to become a software engineer.  
+	I am interested in vintage technology and currently restoring a 1987 Volkswagen Jetta Mk2 with my wife.
+	My interest in retro gaming and computing history inspired me to become a software engineer.  
 
 \end{minipage}
 \hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.35\textwidth} % Right column width
+\begin{minipage}[t]{0.38\textwidth} % Right column width
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	\cvsect{Skills}
-	\raggedright
-	\pill[blue]{C\#} \pill[violet]{ASP.NET Core} \pill[purple]{MSBuild} \pill[cyan]{Azure DevOps}
-	\pill[blue]{Docker} \pill[violet]{Blazor}
-	\pill[blue]{WinUI} \pill[blue]{WPF} \pill[blue]{UWP}
-	\pill[blue]{PostgreSQL} \pill[orange]{Python} \pill[gray]{AI} \pill[green]{FastAPI} 
-	\pill[cyan]{TypeScript} \pill[blue]{React}
-	\pill[red]{Angular} \pill[cyan]{PowerShell} \pill[blue]{C++} 
+	
+	\textbf{Languages:} C\#, Python, C++, TypeScript
+	
+	\textbf{{.}NET:} ASP.NET Core, Entity Framework, WinUI 3, WPF, UWP, Blazor, SignalR, Rx.NET
+	
+	\textbf{DevOps:} Azure DevOps, YAML, MSBuild, Docker, PowerShell
+	
+	\textbf{Other:} PostgreSQL, FastAPI, React, Angular
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
