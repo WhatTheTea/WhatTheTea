@@ -25,7 +25,7 @@
 \usepackage{graphicx}
 \usepackage{tcolorbox}
 \usepackage{enumitem}
-\setlist[itemize]{noitemsep,topsep=2pt,parsep=3pt}
+% \setlist[itemize]{noitemsep,topsep=2pt,parsep=3pt}
 
 \setlength{\leftmargini}{.85em} 
 
@@ -48,7 +48,7 @@
 	
 	\vspace{6pt} % Vertical whitespace
 	
-	{\huge .NET Software Developer} % Career or current job title
+	{\huge Software Engineer} % Career or current job title
 \end{minipage}
 \hfill % Automatic horizontal whitespace
 \begin{minipage}[t]{0.36\textwidth} % Center column with the first column of icons
@@ -77,7 +77,9 @@
 	
 	Software developer with over 6 years of programming experience, including more than 2.5 years of commercial .NET development. 
 	Experienced in Windows desktop applications, Azure DevOps automation, backend services, and legacy system modernization. 
-	I enjoy taking ownership of complex engineering challenges, improving development workflows, and sharing knowledge with others.
+	I enjoy taking ownership of complex engineering challenges, making things simple, and sharing knowledge. 
+	Those qualities stem from my passion for retro tech like 16-bit consoles or my 1987 VW Jetta Mk2 project car
+
 	\end{minipage}
 \hfill % Automatic horizontal whitespace
 
@@ -93,7 +95,7 @@
 
 \begin{entrylist}
 	\entry
-		{08.2024 -- present}
+		{03.2024 -- present}
 		{C\# Developer}
 		{Digital Cloud Technologies}
 		{\texttt{ASP.NET Core}\slashsep\texttt{Azure DevOps}\slashsep\texttt{MSBuild}
@@ -101,42 +103,32 @@
 		\slashsep\texttt{AI}\slashsep\texttt{PowerShell}\slashsep\texttt{WPF}\slashsep\texttt{UWP}\slashsep\texttt{WinUI}}
 		{\location{Remote}}
 		{
+			{\bf{Web \& AI:}}
+
+			\begin{itemize}
+				\item Python FastAPI microservice for a RAG chatbot over a legal-document database: Unstructured.io, SentenceTransformers, PostgreSQL, scheduled tasks and tracked documents configurable at runtime; part of the production system
+				\item Took part in maintaining distributed monolith ASP.NET Core solution with HTML jQuery views, resolved issues within AI RAG chatbot module 
+			\end{itemize}
+			
+			{\bf{DevOps \& Developer Experience}}
+			\begin{itemize}
+				\item Engineered shared, centrally maintained YAML pipeline templates replacing Classic pipelines; migrated 6 projects, enabled parallel product edition builds and standardized pipelines for new projects via documenting and enforcing rules via PR validation policies
+				\item Reduced post-build cleanup from up to 15 minutes to < 10 seconds; scheduled agent cleanup to prevent disk-full failures
+				\item Configured Windows Server build agents to keep interactive sessions for running UI smoke tests I introduced to build pipelines in order to catch application startup failures before manual QA
+				\item Implemented centralized PR validation template via solution builds or unit tests, reporting for outdated internal dependencies, manual testing build links reporting to PR. Documented QA/release workflows and setups for consumer pipelines to support adoption of centralized YAML templates across the team
+			\end{itemize}
+
 			{\bf{Desktop}}
 
 			\begin{itemize}
-				\item Built a commercial WinUI 3 application from scratch to display battery levels of connected Bluetooth peripherals, implementing low-level device communication through protocol research, Wireshark packet analysis, and experimentation. Applied MVVM with ReactiveUI and added unit and UI tests.
+				\item Built a commercial WinUI 3 Bluetooth battery display application, analyzed low-level communications and protocols via Wireshark. Used MVVM, ReactiveUI and ensured device fetching logic is testable
 				\item 6,000-line single-file screenshot editor split into a viewer and an annotation editor built on reusable tools and command history; delivered in increments so users got a more stable editor early
-				\item Legacy desktop apps migrated to modern .NET versions and SDK-style projects
-				\item Expanded unit and UI tests, native stowed exceptions diagnosed from crash reports on a Bluetooth audio companion app
-			\end{itemize}
-
-			{\bf{DevOps \& Developer Experience}}
-			\begin{itemize}
-				\item Shared, centrally maintained YAML pipeline templates replacing Classic pipelines; migrated 6 projects, enabled parallel product builds, and standardized pipelines for new projects
-				\item Reduced post-build cleanup from up to 15 minutes to < 10 seconds; scheduled agent cleanup prevents disk-full failures
-				\item Configured Windows build agents and integrated UI smoke tests to catch application startup failures before QA
-				\item Implemented PR validation, outdated-dependency reporting, build-to-PR links, and QA/release workflows. Documented the setup and processes to support adoption across the team
-			\end{itemize}
-			
-			{\bf{Web \& AI:}}
-			Python FastAPI microservice for a RAG chatbot over a legal-document database: Unstructured.io, SentenceTransformers, PostgreSQL, scheduled tasks and tracked documents configurable at runtime; part of the production system
-		}
-	\entry
-		{03.2024 -- 08.2024}
-		{Trainee C\# Developer}
-		{Digital Cloud Technologies}
-		{\texttt{C\#}\slashsep\texttt{WPF}\slashsep\texttt{UWP}\slashsep\texttt{MVVM}}
-		{\location{Remote}}
-		{
-			\break\begin{itemize}
-				\item Cryptocurrency tracker prototype built as a technical assessment: CoinCap and CoinGecko integration.
-				\item First prototype of the Bluetooth device charge display app, later developed into the commercial WinUI 3 application
-				\item Hands-on work with WPF, UWP, and .NET Framework on smaller development tasks
-			\end{itemize}
+				\item Legacy desktop apps migrated from .NET Framework, .NET Core 3.0 to modern .NET versions and SDK-style projects
+			\end{itemize}			
 		}
 	\entry
 		{04.2023 -- 06.2024\\\footnotesize{part time}}
-		{Teacher}
+		{Mentor}
 		{Professions of the Future Academy}
 		{\texttt{C\#}\slashsep\texttt{Unity}\slashsep\texttt{Python}\slashsep\texttt{Lua}}
 		{\location{Romny, Sumy region, Ukraine}}
@@ -158,7 +150,7 @@
 
 \begin{entrylist}
 	\entry
-		{2024 -- June 2027 \\ \footnotesize remote}
+		{2024 -- present \\ \footnotesize remote}
 		{Bachelor's Degree}
 		{Cherkasy State Technological University}
 		{Computer Science}{}{}
@@ -181,26 +173,17 @@
 	\textbf{English} - B2 (upper-intermediate)\\
 \end{minipage}
 \hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.30\textwidth} % Center column width
+\begin{minipage}[t]{0.7\textwidth} % Right column width
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\cvsect{Interests} 
+	\cvsect{Skills \& Technologies}
 
-	I am interested in vintage technology and currently restoring a 1987 Volkswagen Jetta Mk2 with my wife.
-	My interest in retro gaming and computing history inspired me to become a software engineer.  
+\textbf{Languages:} C\# $\bullet$ Python $\bullet$ C++ $\bullet$ TypeScript
 
-\end{minipage}
-\hfill % Automatic horizontal whitespace
-\begin{minipage}[t]{0.38\textwidth} % Right column width
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-	\cvsect{Skills}
-	
-	\textbf{Languages:} C\#, Python, C++, TypeScript
-	
-	\textbf{{.}NET:} ASP.NET Core, Entity Framework, WinUI 3, WPF, UWP, Blazor, SignalR, Rx.NET
-	
-	\textbf{DevOps:} Azure DevOps, YAML, MSBuild, Docker, PowerShell
-	
-	\textbf{Other:} PostgreSQL, FastAPI, React, Angular
+\textbf{Web:} REST APIs $\bullet$ ASP.NET Core $\bullet$ EF Core $\bullet$ PostgreSQL $\bullet$ FastAPI $\bullet$ SignalR $\bullet$ Blazor
+
+\textbf{Frontend \& UI:} WinUI 3 $\bullet$ WPF $\bullet$ UWP $\bullet$ ReactiveUI $\bullet$ Rx.NET $\bullet$ Angular $\bullet$ React
+
+\textbf{Tools:} Azure DevOps $\bullet$ CI/CD $\bullet$ Docker $\bullet$ YAML $\bullet$ MSBuild $\bullet$ PowerShell $\bullet$ Bash
 \end{minipage}
 
 %----------------------------------------------------------------------------------------
